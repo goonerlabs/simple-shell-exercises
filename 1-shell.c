@@ -30,6 +30,7 @@ int _shell1(char **av)
             tok = strtok(NULL, " \n");
             ac++;
         }
+	printf("%d\n", ac);
         argv = malloc(sizeof(char *) * (ac + 1));
         if (!argv)
             return (1);
